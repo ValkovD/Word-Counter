@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: 800px;
+      margin: 50px auto;
+      background-color: #6b7b8a;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    h1,
+    h3,
+    h2 {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    textarea {
+      display: block;
+      margin: 10px auto;
+      border: 3px solid black;
+      border-radius: 5px;
+      background-color: #a1b8cf;
+      font-size: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #a1b8cf;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    button:hover {
+      background-color: rgb(213, 236, 243);
+    }
+
+    p {
+      /* display: block; */
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Word counter</h1>
+    <h3>Please Enter Text</h3>
+    <textarea name="message" id="text" cols="50" rows="15"></textarea>
+    <h2 id="word">You Have 0 words</h2>
+    <h2 id="symbol">You Have 0 symbols</h2>
+    <button>
+      Reset
+    </button>
+    <p>&#169 2022 Deyn Valkov</p>
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>
