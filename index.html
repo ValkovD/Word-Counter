@@ -6,78 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Word Counter</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/mobile.css">
+  <link rel="icon" type="image/x-icon" href="/favicon/icons8-microsoft-word-2019-windows-11-color-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
 
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-      width: 800px;
-      margin: 50px auto;
-      background-color: #6b7b8a;
-      padding: 5px;
-      border-radius: 3px;
-    }
-
-    h1,
-    h3,
-    h2 {
-      text-align: center;
-      margin: 20px auto;
-    }
-
-    textarea {
-      display: block;
-      margin: 10px auto;
-      border: 3px solid black;
-      border-radius: 5px;
-      background-color: #a1b8cf;
-      font-size: 20px;
-    }
-
-    button {
-      display: block;
-      margin: 20px auto;
-      width: 120px;
-      height: 40px;
-      border-radius: 5px;
-      background-color: #a1b8cf;
-      font-size: 20px;
-      font-weight: bold;
-
-    }
-
-    button:hover {
-      background-color: rgb(213, 236, 243);
-    }
-
-    p {
-      /* display: block; */
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Word counter</h1>
+    <h1>Word Counter</h1>
     <h3>Please Enter Text</h3>
     <textarea name="message" id="text" cols="50" rows="15"></textarea>
-    <h2 id="word">You Have 0 words</h2>
-    <h2 id="symbol">You Have 0 symbols</h2>
+    <p id="word">You Have 0 words</p>
+    <p id="symbol">You Have 0 symbols</p>
     <button>
       Reset
     </button>
-    <p>&#169 2022 Deyn Valkov</p>
+    <!-- <p>&#169 2022 Deyn Valkov</p> -->
   </div>
+  <footer class="footer">
+    <p id="logo-text">pDe.(IT)</p>
+    <a href="https://www.pdeit.com" target="_blank">
+      <div class="logo"></div>
+    </a>
+    <p>Deyan Valkov</p>
+    <p>&#169 2022</p>
+  </footer>
   <script src="/app.js"></script>
 </body>
 
